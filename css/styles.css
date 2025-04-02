@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+    text-align: center;
+}
+
+/* Contenedor de imágenes */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las imágenes */
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Primera y segunda imagen con efecto de rotación */
+.gallery-container img:nth-child(1):hover {
+    transform: rotate(-10deg);
+}
+
+.gallery-container img:nth-child(2):hover {
+    transform: rotate(10deg);
+}
+
+/* Otras imágenes con diferentes transformaciones */
+.gallery-container img:nth-child(3):hover {
+    transform: scale(1.2);
+}
+
+.gallery-container img:nth-child(4):hover {
+    transform: translateY(-10px);
+}
+
+.gallery-container img:nth-child(5):hover {
+    transform: skew(10deg);
+}

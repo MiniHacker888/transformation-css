@@ -1,0 +1,49 @@
+/* Estilos generales */
+
+/* Contenedor del formulario */
+.contact-form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Efecto de desenfoque */
+}
+
+/* Campos del formulario */
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    background: rgba(255, 255, 255, 0.6); /* Campos con transparencia */
+}
+
+/* Efecto de foco en los campos */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    background: rgba(255, 255, 255, 0.9); /* Mayor opacidad al enfocarse */
+}
+
+/* Botón de envío */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Cambio de color y animación al pasar el mouse */
+.contact-form button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Efecto de ligero zoom */
+}
