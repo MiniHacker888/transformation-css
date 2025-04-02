@@ -21,27 +21,33 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-radius 0.5s ease;
 }
 
-/* Primera y segunda imagen con efecto de rotación */
+/* Primera imagen: rotación y forma redonda */
 .gallery-container img:nth-child(1):hover {
     transform: rotate(-10deg);
+    border-radius: 50%;
 }
 
+/* Segunda imagen: solo rotación */
 .gallery-container img:nth-child(2):hover {
     transform: rotate(10deg);
 }
 
-/* Otras imágenes con diferentes transformaciones */
+/* Tercera imagen: escala y forma ovalada */
 .gallery-container img:nth-child(3):hover {
     transform: scale(1.2);
+    border-radius: 50% 30%;
 }
 
+/* Cuarta imagen: desplazamiento vertical */
 .gallery-container img:nth-child(4):hover {
     transform: translateY(-10px);
 }
 
+/* Quinta imagen: inclinación y forma redonda */
 .gallery-container img:nth-child(5):hover {
     transform: skew(10deg);
+    border-radius: 50%;
 }
